@@ -1,0 +1,21 @@
+<h2><a href="http://www.songkick.com/festivals/1/id/<%= @festival.id %>"><%= @festival.name %></a> for <%= params['username'] %></h2>
+<span class="menu">
+    <a <% if @tab == 'love' %>class="active"<% end %> href="/users/<%= params['username']%>/festivals/<%= @festival.id  %>/love">
+      bands you ♥
+    </a>
+    |
+    <a <% if @tab == 'hotttness' %>class="active"<% end %> href="/users/<%= params['username']%>/festivals/<%= @festival.id  %>/hotttness">
+        hottt bands you will ♥
+    </a>
+    |
+    <a <% if @tab == 'beer' %>class="active"<% end %> href="/users/<%= params['username']%>/festivals/<%= @festival.id  %>/beer">
+        beer and/or pee break
+    </a>
+</span>
+
+<ol class="artists">
+  <% @artists.each do |artist| %>
+    <% next unless artist.image != '' %>
+    <li class="artist"><%= erb :artist, :locals => {:artist => artist}, :layout => false %></li>
+  <% end %>
+</ol>

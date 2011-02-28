@@ -1,0 +1,4 @@
+api_keys:
+    lastfm: "key"
+    songkick: "key"
+    echonest: "key"

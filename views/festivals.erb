@@ -1,0 +1,6 @@
+<h2>Upcoming festivals for <%= params['username'] %></h2>
+<ol>
+  <% @festivals.each do |festival| %>
+    <li><a href="/users/<%= params['username']%>/festivals/<%= festival.id  %>/love"><%= festival.name %></a></li>
+  <% end %>
+</ol>

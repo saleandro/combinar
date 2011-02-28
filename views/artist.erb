@@ -1,0 +1,6 @@
+<div class="artist-cell">
+  <a href="<%= artist.mp3 %>" target="blank" title="<%= artist.name %>">
+    <img height="100" width="110" src=<%= artist.image %> title="<%= artist.name %>"/>
+    <%= artist.name[0..12] + (artist.name.size > 13 ? '...' : '') %>
+  </a>
+</div>

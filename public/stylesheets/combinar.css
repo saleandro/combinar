@@ -1,0 +1,94 @@
+html, body { 
+  margin:0; 
+  padding:0; 
+  text-align:center;
+  font-family: Helvetica,Arial,freeSans,sans-serif;
+} 
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+.com {
+  color: #FF8900;
+}
+
+.binar {
+  color: #235D79;
+}
+
+a {
+  color: #086FA1;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #034769;
+}
+
+a.active {
+  color: #FF8900;
+}
+
+.menu a {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#main { 
+  width:70%; 
+  text-align:left; 
+  margin:0 auto; 
+} 
+ 
+{
+  background-color: #FFFFFF;  
+  position: relative; 
+}
+ 
+#footer{
+  height:150px;
+  background-color:#FFFFFF; 
+  clear:both;
+  display:block;
+  overflow:auto;
+  font-size: smaller;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#footer img {
+  margin-left: 20px
+} 
+
+.active {
+  font-weight: bold;
+}
+
+.artists {
+  width: 800px;;
+  overflow: hidden;
+  list-style: none outside none;
+  margin-bottom: 1em;
+  padding: 0px;
+}
+
+.artist {
+  float: left;
+  margin: 15px;
+  font-size: 0.9em;
+}
+
+.artist-cell {
+  width: 120px;
+  position: relative;
+  display: block;
+}
+
+img {border: 0px}
